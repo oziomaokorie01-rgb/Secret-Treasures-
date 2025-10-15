@@ -1,37 +1,29 @@
-# 🔒 Secret Treasures — Encrypted Reward Game
+# 🃏 ShadowCards — Private Blackjack (Arcium + Solana Demo)
 
-**Built for the Arcium x Solana Hackathon**
+## 💡 Overview
+ShadowCards demonstrates how Arcium’s encrypted compute can power *hidden-information games* on Solana.  
+Each player’s cards are encrypted and privately compared using MPC, revealing only the final outcome.
 
----
+## ⚙️ Features
+- 🔒 Encrypted player hands (simulated)
+- 🎲 MPC-based private randomness
+- 🤖 Private result reveal
+- 📱 Built fully on mobile via Replit (no liquidity, no wallets)
 
-## 💡 Concept
-A simple browser game demonstrating **Arcium Encrypted Compute** — where rewards and user interactions are computed privately.  
-No real tokens, swaps, or liquidity needed — just a privacy-based demo.
+## 🧠 Why Arcium
+Arcium enables encrypted compute — allowing gameplay logic (like comparing cards) to happen *privately* without revealing inputs.  
+This ensures fairness and transparency while maintaining privacy for all players.
 
----
+## 🚀 Future Integration
+To connect this with Solana:
+1. Replace fakeEncrypt() with Arcium SDK’s real `encryptInputs()`
+2. Send encrypted game state to Solana smart contract
+3. Use Arcium MXE to compute the winner privately
+4. Post verified result on-chain
 
-## 🧱 Tech Stack
-- HTML, CSS, JavaScript
-- Mobile-friendly and lightweight
-- Simulated Arcium privacy actions (no blockchain transactions)
-
----
-
-## 🕹️ How to Play
-1. Open `index.html` in any browser (mobile or desktop).
-2. Tap **“Connect Wallet”** (simulated connection).
-3. Tap **“Discover Treasure”** to generate an encrypted private reward.
-4. Enjoy your private treasure 🎁
-
----
-
-## 🧑‍💻 Developer
-Created by **[@Senseii_ciel](https://x.com/Senseii_ciel)**  
-GitHub: [ozzy-sensei](https://github.com/ozzy-sensei)  
-Discord: [1305099867126759516](https://discord.com/users/1305099867126759516)
-
----
-
-## ⚙️ Future Plans
-- Integration with real Arcium SDK for encrypted randomness.
-- Connect actual Solana wallet for testnet-based proof of concept.
+## 🎯 Submission Info
+- **Track:** Hidden-Information Games
+- **Project:** ShadowCards — Encrypted Blackjack
+- **Platform:** Solana + Arcium (simulated)
+- **Built on:** Replit mobile
+- **Liquidity Needed:** None
