@@ -1,29 +1,14 @@
-# 🃏 ShadowCards — Private Blackjack (Arcium + Solana Demo)
+# ShadowDEX (Phone Demo) — Simulated
 
-## 💡 Overview
-ShadowCards demonstrates how Arcium’s encrypted compute can power *hidden-information games* on Solana.  
-Each player’s cards are encrypted and privately compared using MPC, revealing only the final outcome.
+This Replit demo simulates encrypted order submission and private matching (Arcium flow simulated).
+How it maps to real system:
+- fakeEncryptOrder() => client-side Arcium SDK encryption
+- Run Private Match => Arcium MXE private matching
+- events => on-chain callback event
 
-## ⚙️ Features
-- 🔒 Encrypted player hands (simulated)
-- 🎲 MPC-based private randomness
-- 🤖 Private result reveal
-- 📱 Built fully on mobile via Replit (no liquidity, no wallets)
+To demo (phone):
+1. Open the Replit URL
+2. Submit one Buy and one Sell order
+3. Tap "Run Private Match" to simulate Arcium MPC matching
 
-## 🧠 Why Arcium
-Arcium enables encrypted compute — allowing gameplay logic (like comparing cards) to happen *privately* without revealing inputs.  
-This ensures fairness and transparency while maintaining privacy for all players.
-
-## 🚀 Future Integration
-To connect this with Solana:
-1. Replace fakeEncrypt() with Arcium SDK’s real `encryptInputs()`
-2. Send encrypted game state to Solana smart contract
-3. Use Arcium MXE to compute the winner privately
-4. Post verified result on-chain
-
-## 🎯 Submission Info
-- **Track:** Hidden-Information Games
-- **Project:** ShadowCards — Encrypted Blackjack
-- **Platform:** Solana + Arcium (simulated)
-- **Built on:** Replit mobile
-- **Liquidity Needed:** None
+Repo: [replit link]
